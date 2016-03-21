@@ -13,10 +13,16 @@ function winner (){
   if(Xarray===wins){
     alert('Player X is the winner!!!');
   }
+
   else if(Oarray===wins){
     alert('Player O is the winner!!!');
   }
 }
+
+function emptyBox(){
+  if(typeof === 'number'){
+    $('.box').on('click','span'(function(){
+      $(this).append().css({'span','input').val()
 
 function play(){
  for(var i = 0; i < 9;i++){
@@ -37,9 +43,7 @@ $('.turn').on('focus',play);
 //create an event listener that highlights boxes that are being hovered over
 
 //create an event listener that allows player to mark an empty box
-$('#board').on('click','row',function(){
-  $(this).closest('.box').append('').text(next().val());;
-// create a flow that doesn't let user click on used box.
+$('#board').on('click','.box',empty);// create a flow that doesn't let user click on used box.
 
 // users should be able to click a reset button.
 $('.button').on('click','.glyphicon',function() {
